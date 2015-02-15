@@ -1,0 +1,403 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+*:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+  padding-top: 80px;
+  margin-bottom: 60px; /* Margin bottom by footer height */ 
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #1a202c;
+  background: #fff;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/*Top Nav Bar style*/
+.navbar-inverse {
+  height: 2.55556em;
+  background-color: #1a202c;
+}
+
+.navbar-collapse {
+  border-top: none;
+  background-color: #1a202c;
+}
+
+.brand {
+  margin-top: -6px;
+  margin-bottom: 25px
+}
+
+@media (max-width:767px) {
+  .display_logo {
+    margin-top: 0; 
+  }
+}
+
+.logo_homepage{
+  margin-top: 15px;
+  margin-bottom: 25px
+}
+
+@media (max-width:767px) {
+  .not-auth-btn{
+      float:right;
+      padding-right: 15px;
+      /*margin-bottom: 15px;*/
+  }
+}
+/*header search bar*/
+.desktop-search-bar{ width:400px; }
+
+@media (max-width:767px) {
+  .navbar> .navbar-form {
+      width: auto;
+      padding-left:0;
+      padding-right:0;
+  }
+}
+
+@media(min-width:768px) {
+  .navbar> .navbar-form { width: 380px; }
+}
+
+.navbar> .navbar-form {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  border: 0;
+}
+
+/*Search bar*/
+.search-bar { border-right: none; }
+
+.caret-space { margin-left: 2px !important; }
+
+.search-option {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+/*-------------Sign up button style-----------*/
+.signup{
+  margin-top: 9px;
+  padding-top: 5px;  
+  color: #fff;
+  background-color: #ff754f;
+  border-color: transparent;
+}
+
+.signup:hover{
+  color: #fff;
+  background-color: #D93B0F;
+  border-color: #D93B0F;
+}
+
+.signup:focus {
+  color: #fff;
+  background-color: #D93B0F;
+  border-color: #D93B0F;
+}
+
+.signup-header { background-color: #fff }
+
+.section-wrapper span {
+  position: relative;
+  top: -0.8em;
+  display: inline-block;
+  padding: 0 0.5em;  
+  background: none repeat scroll 0 0 #f1f1f1;
+}
+
+/*--------------Login button style--------------*/
+.login {
+  color: #fff;
+  margin-top: 9px;
+  padding-top: 5px;
+  background-color: #1a202c;
+  border-color: #fff
+}
+
+.login:active {
+  background-color: #1F7872;
+  border-color: #fff;
+}
+
+.login:hover {
+  color: #fff;
+  background-color: #1F7872;
+  border-color: #1F7872;
+}
+
+.login:focus {
+  color: #fff;
+  background-color: #1F7872;
+  border-color: #1F7872;
+}
+
+@media (max-width:767px) {
+  .signup, .login{
+      margin:0 0 0 0;
+
+  }
+}
+
+/*Nav-bar User account Dropdown*/
+.navbar-login {
+  width: 305px;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.navbar-login-session {
+  padding: 10px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.icon-size {
+  font-size: 87px;
+}
+
+@media (max-width:767px) {
+  .mobile-view {
+    color: #fff;
+  }
+
+  .navbar-login{
+    width: 98%;
+  }
+
+  .navbar-inverse>
+  .navbar-nav> 
+  .open>
+  .dropdown-menu>
+  .divider { background-color: #CCCCCC; }    
+}
+
+#divide {  
+  margin-bottom: -10px;
+  padding-bottom: -10px;  
+  border: none;
+  border-top: 0;
+  border-left: 0; 
+  border-right: 0;
+  border-bottom-width: -1px;
+
+}
+
+@media (max-width:767px) {
+  #divide{
+    margin-bottom: 10px;
+    padding-bottom: 10px;      
+    border: 1px solid gray;
+    border-bottom-width: 1px;
+    border-top: 0;
+    border-left: 0; 
+    border-right: 0;
+  }
+}
+/*---------------------Login Form---------------------------*/
+@media (max-width:767px) {
+  .display_logo{ margin-top: 30px; }
+}
+
+.login-form {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.login-or {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: #aaa;  
+}
+
+.span-or {
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  display: block;
+  width: 50px;   
+  margin-left: -25px;
+  text-align: center;    
+  background-color: #fff;  
+}
+
+.hr-or {
+  height: 1px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;  
+  background-color: #cdcdcd;
+}
+
+.login-title { text-align: center; }
+
+.forgot_password { margin-top: 15px; }
+/*---------------------/. Login Form---------------------------*/
+
+/*--------------------- Sign Up Form---------------------------*/
+.btn-success {
+  background-color: #23b0a3;
+  border-color: #23b0a3
+}
+
+.btn-success:hover {
+  background-color: #338e86;
+  border-color: #338e86
+}
+
+.btn-success:focus {
+  background-color: #338e86;
+  border-color: #338e86
+}
+
+legend {
+  color:#141823;
+  font-size:25px;
+  font-weight:bold;
+}
+
+.form-control { margin-bottom: 10px; }
+
+/*---------------------/. Sign Up Form---------------------------*/
+
+/*New post confession*/
+.post-confession-bar {
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  padding: 10px 25px;
+  text-align: right;
+}
+
+.confession-thread {
+  position: relative;
+  margin-top: 20px;
+  font-size: 14px;
+  border-radius: 0;
+  border: 1px solid rgb(216,216,216);  
+}
+
+.confession-thread > .dropdown {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+
+.confession-thread > .dropdown > span > span {
+  font-size: 12px;   
+}
+
+.confession-thread > .dropdown > .dropdown-menu {
+  left: initial;
+  right: 0;
+  border-radius: 2px;
+}
+
+.user-post {
+  margin-bottom: 15px;
+}
+
+.post-time {
+  padding-top: 10px;
+  font-size: 12px;
+  color: #9197a3;
+  padding-left: 17px;
+}
+
+.vote-btn {
+  padding-right: 17px;  
+  font-size: 1.3em;
+  text-align: right;
+}
+
+.confession-content{
+  padding-top: 5px;
+  padding-right: 17px;  
+  text-align: justify;
+}
+
+a> .glyphicon-remove, .glyphicon-flag{
+  color: #C4C4C4;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+.text-muted {
+ color: #fff; 
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  text-align: center;
+  font-size: 16px;  
+  background-color: #1a202c;
+}
+.about, .contact, .privacy, .terms{
+  display: inline-block;
+  padding: 5px;
+  margin-right: 10%;
+  color: #72B095;
+}
+.copy-right{
+  display: inline-block;
+  padding: 5px;
+  margin-right: 5%;
+  color: #fff;
+}
+@media (max-width: 767px){
+  .about, .contact, .privacy, .terms{
+    display: inline;
+  }
+}
+
+/*About Page glyphicon styles*/
+.name {
+  font-weight: bold;
+}
+
+.position {
+  color: #A8A8A8;
+}
+
+.glyphicon-heart {
+  font-size: 4em;  
+  color: #FF006A;
+}
+
+.glyphicon-wrench{
+  font-size: 4em;  
+  color: #FF7700;
+}
+
+.glyphicon-globe{
+  font-size: 4em;  
+  color: #639FFF;
+}
